@@ -1,4 +1,4 @@
-# Week-2-project
+# Advance GIS Week-2-project
 
 This is week 2 project for Advance GIS course.
 
