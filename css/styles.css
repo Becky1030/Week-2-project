@@ -8,10 +8,14 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: #ff4747;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+body.dark{
+  background-color: black;
 }
 
 .toggle-btn {
@@ -30,21 +34,36 @@ body {
   display: block;
   width: 100px;
   height: 100px;
-  background-color: #ffffff;
+  background-image: linear-gradient(92.88deg, #ff9500 15.16%, #ff0000 43.89%, #ef3c00 64.72%);
   border-radius: 50%;
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0),
     inset 5px 0 10px rgba(0, 0, 0, 0.25);
 }
+
+
+.toggle-btn .switch:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 100px;
+}
+
+.toggle-btn .switch:active {
+  transform: translateX(0);
+  box-shadow: 0 20px 50px;
+}
+
 
 .toggle-btn .moon {
   width: 85px;
   position: absolute;
   bottom: 20px;
   left: 15px;
-  transform: translateY(200%);
+  transform: translateY(300%);
   transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
   z-index: 1;
 }
+
+
+
 
 .toggle-btn.active {
   background-image: url(https://i.postimg.cc/k46ynpMN/night.webp);
@@ -60,4 +79,43 @@ body {
 
 .bolded {
   font-weight: bold;
+}
+
+.container{
+  width: 540px;
+  margin: 40px auto;
+  overflow: auto;
+}
+
+.slider-inner{
+  width: 500px;
+  height: 300px;
+  position:relative;
+  overflow: hidden;
+  float: left;
+  padding: 0px;
+  border: lightskyblue solid 5px;
+}
+
+.slider-inner img{
+  display: none;
+  width: 500px;
+  height: 300px;
+}
+
+.slider-inner img.active{
+  display:inline-block;
+}
+
+.prev{
+  position: relative;
+  margin-right: -10px;
+  z-index: 100;
+}
+
+.next{
+  position: relative;
+  margin-right: -10px;
+  margin-bottom: -65px;
+  z-index: 100;
 }
