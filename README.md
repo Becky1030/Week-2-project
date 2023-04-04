@@ -2,5 +2,5 @@
 
 This is week 2 project for Advance GIS course.
 
-The project is completed by using HTML, CSS
+The project is completed by using HTML, CSS, and jQuery.
  
